@@ -39,5 +39,8 @@ angular.module('app', [])
     console.log(string);
   }, function(error) {
     console.log(error);
+  })
+  .finally(function() { //either 'resolve' or 'reject' is called; regardless of which one, 'finally' is called afterward
+    console.log('Finished at: ', new Date());
   });
 });
