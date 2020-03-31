@@ -24,5 +24,7 @@ angular.module('app', [])
   var promise = getData()
   .then(function(string) {
     console.log(string);
+  }, function(error) {
+    console.log(error);
   });
 });
